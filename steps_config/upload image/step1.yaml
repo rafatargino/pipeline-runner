@@ -1,0 +1,28 @@
+# -------------------------------------------------------------
+# CONFIGURAÇÃO DO STEP - UPLOAD DE IMAGENS
+# 
+# step_name            : Nome descritivo do Step.
+# step_type            : Tipo do Step. "prompt" para Steps LLM, "custom" para Steps manuais.
+# class_name           : Nome da classe Python que implementa o Step (respeitar CamelCase).
+# inputs               : Lista de entradas que o Step deve processar.
+#   input_type         : Tipo dos arquivos (image, csv, txt, docx, etc).
+#   input_folder       : Caminho da pasta com arquivos de entrada.
+#   input_pattern      : Padrão dos arquivos (usa curinga * ou {item}).
+#   multiple_files     : true para vários arquivos, false para apenas um.
+# custom_params        : Parâmetros específicos do Step customizado.
+#   cloudinary_folder  : Nome da pasta no Cloudinary para salvar as imagens.
+#   output_file        : Caminho do arquivo de saída com as URLs geradas.
+# -------------------------------------------------------------
+
+step_name: "Upload de Imagens para Cloudinary"
+step_type: "custom"
+class_name: "UploadImageStep"
+
+inputs:
+  - input_type: "image"
+    input_folder: "input/"
+    input_pattern: "tela_*.jpg"
+    multiple_files: true
+
+custom_params:
+  cloudinary_folder: "timetrack"

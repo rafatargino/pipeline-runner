@@ -1,0 +1,61 @@
+# ---------------------------------------------------
+# step_name: Nome do Step para visualização no log.
+# step_type: Tipo do Step (prompt ou custom).
+# 
+# inputs:
+#   - input_type: Tipo do input (image, text, csv, etc.)
+#     input_folder: Pasta onde os inputs estão localizados.
+#     input_pattern: Padrão de nome dos arquivos.
+#     multiple_files: true para processar vários arquivos em loop.
+#
+# prompt:
+#   system: Mensagem de sistema (contexto) para o modelo.
+#   user: Instrução principal para o modelo.
+#   attachments: Lista de anexos (geralmente preenchido automaticamente). - não usado
+#
+# output:
+#   output_type: Tipo do arquivo de saída (docx, txt, json, etc.)
+#   output_folder: Pasta onde os outputs serão salvos.
+#   send_files_separately: true para gerar um arquivo por input.
+#
+# model_params:
+#   model: Nome do modelo a ser usado (ex: gpt-4o).
+#   temperature: Controle de aleatoriedade (default: 1.0).
+#   top_p: Amostragem top-p (default: 1.0).
+#   frequency_penalty: Penalidade por repetição (default: 0.0).
+#   presence_penalty: Penalidade para assuntos novos (default: 0.0).
+# ---------------------------------------------------
+step_name: "Especificação de Tela via Prompt"
+step_type: "prompt"
+
+inputs:
+  - input_type: "image"
+    input_folder: "datasets/input/"
+    input_pattern: "tela_*.jpg"
+    multiple_files: true
+
+
+output_type: "docx"  # ou "txt" ou "file" // docx é um txt convertido para doc no pyhon 
+output_folder: "datasets/step2/"
+send_files_separately: false
+generator_mode: "assistants"
+
+
+prompt:
+  system: |
+    Você é um analista de negócio super experiente e precisa gerar um documento de especificação 
+    de requisitos a partir de uma imagem. Não me precisa explicar o que está sendo feito, apenas gere 
+    os links para os documetos conforme a especificação abaixo:
+    - Focado na perspectiva do usuário.
+    - Use frases como: "O sistema precisa permitir que o usuário...".
+    - Nome do arquivo sugerido: req_especif_[nome_da_tela].doc
+  user: |
+    Baseado na imagem enviada, gere os documentos conforme descrito.
+  attachments: []  # Aqui ele vai adicionar os arquivos como input automaticamente
+
+model_params:
+  model: "gpt-4o"
+  temperature: 1.0
+  top_p: 1.0
+  frequency_penalty: 0.0
+  presence_penalty: 0.0

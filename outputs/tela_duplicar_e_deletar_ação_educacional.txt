@@ -1,0 +1,21 @@
+Sure, here's a specification document for the screen name:
+
+---
+
+**Nome do Arquivo Sugerido:** req_especif_analise_viabilidade_projetos.doc
+
+**Requisitos do Sistema:**
+
+1. **Visualização de Relatórios:**
+   - O sistema precisa permitir que o usuário visualize relatórios de análise de viabilidade de projetos com gráficos e dados financeiros.
+   
+2. **Configurações de Acesso:**
+   - O sistema precisa permitir que o usuário defina o acesso do documento como "Público" ou "Privado".
+
+3. **Gerenciamento de Projetos:**
+   - O sistema precisa permitir que o usuário gerencie a lista de projetos, oferecendo opções para adicionar, editar, duplicar ou excluir projetos. A funcionalidade de "Gerenciar" deve ser intuitiva e de fácil acesso.
+
+4. **Interface Intuitiva:**
+   - O sistema deve proporcionar uma interface clara e interativa que permita ao usuário explorar dados desde a concepção dos projetos até a decisão final.
+
+---

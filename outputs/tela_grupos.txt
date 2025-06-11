@@ -1,0 +1,21 @@
+[Download req_especif_editar_usuario.doc](#)
+
+### Especificação de Requisitos - Tela: Editar Usuário
+
+1. **Gerenciamento de Usuário**
+   - O sistema precisa permitir que o usuário visualize e edite as informações básicas de um usuário existente.
+   - O sistema precisa mostrar o tipo de usuário, a data do último acesso e a data de criação do usuário.
+
+2. **Ações de Administração**
+   - O sistema precisa permitir que o usuário gere um link de login rápido.
+   - O sistema precisa permitir que o usuário exclua o usuário atual.
+
+3. **Relacionamentos**
+   - O sistema precisa permitir que o usuário adicione e remova relacionamentos através de menus suspensos.
+   - O sistema deve permitir que o usuário adicione novos grupos ao usuário clicando no botão '+'. 
+
+4. **Confirmação e Cancelamento**
+   - O sistema precisa permitir que o usuário salve as alterações feitas ou cancele a operação.
+
+5. **Interface do Usuário**
+   - O sistema precisa exibir os elementos de interface de forma clara e organizada, com botões de ação visíveis para salvar ou cancelar as operações.

@@ -1,0 +1,18 @@
+Aqui estão os documentos de especificação de requisitos baseados na imagem:
+
+1. [req_especif_informacoes_curso.doc](#)
+   - O sistema precisa permitir que o usuário visualize o nome, descrição, categoria, idioma e imagem do curso.
+
+2. [req_especif_disponibilidade.doc](#)
+   - O sistema precisa permitir que o usuário acesse o valor do curso, formas de pagamento e data de lançamento.
+
+3. [req_especif_avaliacoes_opinioes.doc](#)
+   - O sistema precisa permitir que o usuário veja as avaliações das aulas, conteúdo e formato do curso.
+
+4. [req_especif_convites.doc](#)
+   - O sistema precisa permitir que o usuário envie convites por email para inscrição na ação educacional.
+
+5. [req_especif_turmas.doc](#)
+   - O sistema precisa permitir que o usuário crie e gerencie turmas para o curso.
+
+Esses documentos são focados em garantir que as funcionalidades atendam às necessidades dos usuários na gestão de cursos.

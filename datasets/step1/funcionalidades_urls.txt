@@ -1,0 +1,4 @@
+tela_ação_educacional,https://res.cloudinary.com/drurz3ji6/image/upload/v1748740674/timetrack/tela_a%C3%A7%C3%A3o_educacional.jpg
+tela_duplicar_e_deletar_ação_educacional,https://res.cloudinary.com/drurz3ji6/image/upload/v1748740675/timetrack/tela_duplicar_e_deletar_a%C3%A7%C3%A3o_educacional.jpg
+tela_grupos,https://res.cloudinary.com/drurz3ji6/image/upload/v1748740676/timetrack/tela_grupos.jpg
+tela_relacionamento_de_usuários,https://res.cloudinary.com/drurz3ji6/image/upload/v1748740676/timetrack/tela_relacionamento_de_usu%C3%A1rios.jpg
