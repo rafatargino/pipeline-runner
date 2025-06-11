@@ -82,6 +82,9 @@ logs/
 data/*/output/*
 !data/*/input/  # Mantém a pasta input
 
+# Evidências
+evidencias/
+
 # Local settings
 local_settings.py
 
